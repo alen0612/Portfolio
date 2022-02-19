@@ -1,0 +1,926 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Noto Sans', sans-serif !important;
+    overflow-x: hidden;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav li {
+    font-size: 2rem;
+}
+
+.navbar-nav li:hover {
+    font-size: 2.5rem;
+    transition: 0.6s;
+}
+
+.navbar-toggle {
+    margin-left: 90%;
+}
+
+#myCarousel li {
+    color: black;
+    background-color: black;
+}
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: hidden;
+}
+
+.welcome {
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome i {
+    color: white;
+    font-size: 6rem;
+    animation: arrow 0.75s alternate infinite;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(-20px);
+        transition-timing-function: ease-in-out;
+    }
+}
+
+.about {
+    height: 100vh;
+    width: inherit;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 7rem;
+}
+
+.me {
+    width: inherit;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.me-image {
+    width: 35%;
+}
+
+.me-image img {
+    width: 70%;
+    border-radius: 999px;
+}
+
+.me-text {
+    width: 45%;
+}
+
+.me-text p {
+    font-size: 4.5rem;
+}
+
+.education {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(231, 226, 214);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.education h1 {
+    font-size: 7rem;
+}
+
+.school {
+    width: inherit;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.school div img {
+    width: 50rem;
+    border-radius: 99px;
+}
+
+.school-text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+}
+
+.school-text div h3 {
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+.school-text div h4 {
+    text-align: right;
+}
+
+.skill {
+    width: inherit;
+    height: 100vh;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill h1 {
+    font-size: 7rem;
+}
+
+.skill h2 {
+    font-size: 5em;
+}
+
+.skill h4 {
+    font-size: 4rem;
+}
+
+.web {
+    height: 30%;
+    width: inherit;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.web h2 {
+    text-align: center;
+}
+
+.web-skill {
+    width: inherit;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.web-skill div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fa-html5 {
+    font-size: 12rem;
+    background-image: linear-gradient(to right, rgb(221, 75, 37), rgb(233, 98, 40));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: none;
+}
+
+.fa-css3-alt {
+    font-size: 12rem;
+    background-image: linear-gradient(to right, rgb(33, 76, 229), rgb(36, 101, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: none;
+}
+
+.fa-bootstrap {
+    font-size: 12rem;
+    color: rgb(142, 11, 253);
+    animation: none;
+}
+
+.programminglanguage {
+    height: 20%;
+    width: inherit;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.programminglanguage-language {
+    width: inherit;
+    margin-left: 6.5%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.toeic {
+    height: 20%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experience {
+    height: 100vh;
+    background-color: rgb(231, 226, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experience-title {
+    max-height: 15%;
+}
+
+.experience h1 {
+    font-size: 7rem;
+}
+
+.project {
+    max-height: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#myCarousel {
+    max-height: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.item a img {
+    height: 640px;
+    width: 960px;
+}
+
+.project h2 {
+    font-size: 4.5rem;
+}
+
+.teamexperience {
+    height: 15%;
+    width: inherit;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teamexperience h2 {
+    font-size: 4.5rem;
+}
+
+.teamexperience h3 {
+    font-size: 2.5rem;
+}
+
+.contact {
+    height: 100vh;
+    width: inherit;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact h1 {
+    font-size: 7rem;
+}
+
+.contact i {
+    color: black;
+}
+
+.contact-icon {
+    width: inherit;
+    height: 60%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-facebook {
+    font-size: 8rem;
+    animation: none;
+}
+
+.fa-facebook:hover {
+    font-size: 10rem;
+    transition: 0.6s;
+}
+
+.fa-github {
+    font-size: 8rem;
+    animation: none;
+}
+
+.fa-github:hover {
+    font-size: 10rem;
+    transition: 0.6s;
+}
+
+.fa-envelope {
+    font-size: 8rem;
+    animation: none;
+}
+
+.fa-envelope:hover {
+    font-size: 10rem;
+    transition: 0.6s;
+}
+
+.fa-mobile-alt {
+    font-size: 8rem;
+    animation: none;
+}
+
+.fa-mobile-alt:hover {
+    font-size: 10rem;
+    transition: 0.6s;
+}
+
+@media (max-width: 1440px) {
+
+    /*welcome*/
+    .welcome i {
+        font-size: 5rem;
+    }
+
+    /*about*/
+    .about h1 {
+        font-size: 6rem;
+    }
+
+    .me {
+        flex-direction: row;
+        height: 60%;
+    }
+
+    .me img {
+        width: 30rem;
+    }
+
+    .me-image {
+        text-align: center;
+    }
+
+    .about p {
+        text-align: left;
+        font-size: 3.5rem;
+    }
+
+    /*education*/
+    .education h1 {
+        font-size: 6rem;
+    }
+
+    .school {
+        height: 50%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .school div img {
+        width: 43rem;
+    }
+
+    .school-text {
+        height: 30%;
+    }
+
+    .school-text div h3 {
+        font-size: 3.5rem;
+    }
+
+    .school-text div h4 {
+        font-size: 1.8rem;
+    }
+
+    /*skill*/
+    .skill h1 {
+        font-size: 6rem;
+    }
+
+    .skill h2 {
+        font-size: 2.5em;
+    }
+
+    .skill h4 {
+        font-size: 1.75rem;
+    }
+
+    .web-skill i {
+        font-size: 7rem;
+    }
+
+    .programminglanguage-language {
+        margin-right: 3.5rem;
+    }
+
+    .toeic {
+        height: 10%
+    }
+
+    /*experience*/
+    .experience h1 {
+        font-size: 6rem;
+    }
+
+    .experience h2 {
+        font-size: 2.75em;
+    }
+
+    .experience h3 {
+        font-size: 2.25rem;
+    }
+
+    .project {
+        height: 50%
+    }
+
+    .carousel-inner {
+        max-height: 30rem;
+    }
+
+    .item {
+        width: 80rem;
+        max-height: 45rem;
+    }
+
+    /*contact*/
+    .contact h1 {
+        font-size: 6rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    /*about*/
+    .about {
+        justify-content: space-around;
+    }
+
+    .about h1 {
+        font-size: 5rem;
+    }
+
+    .me {
+        height: 60%;
+        max-height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .me-image {
+        margin-top: -5rem;
+        max-height: 20rem;
+    }
+
+    .me-image img {
+        width: 20rem;
+        ;
+    }
+
+    .me-text p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /*education*/
+    .education {
+        justify-content: space-around;
+    }
+
+    .education h1 {
+        font-size: 5rem;
+    }
+
+    .school {
+        height: 60%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .school div img {
+        margin-top: -5rem;
+        width: 26rem;
+    }
+
+    .school-text div h3 {
+        font-size: 2.5rem;
+    }
+
+    .school-text h4 {
+        font-size: 1rem;
+    }
+
+    /*skill*/
+    .skill h1 {
+        font-size: 5rem;
+    }
+
+    .skill h2 {
+        font-size: 3.5rem;
+    }
+
+    .skill h4 {
+        font-size: 2rem;
+    }
+
+    .web {
+        height: 25%;
+    }
+
+    .programminglanguage-language {
+        margin-left: 9.5%;
+    }
+
+    /*experience*/
+    .experience h1 {
+        font-size: 5rem;
+    }
+
+    .experience h2 {
+        font-size: 3.5rem;
+    }
+
+    .experience h3 {
+        font-size: 2rem;
+    }
+
+    .project {
+        max-height: 30rem;
+    }
+
+    #myCarousel {
+        max-width: 65rem;
+    }
+
+    .item a img {
+        max-width: 80% !important;
+        max-height: 50%;
+        object-fit: cover !important;
+    }
+
+    /*contact*/
+    .contact h1 {
+        font-size: 5rem;
+    }
+
+    .contact i {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav li {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav li:hover {
+        font-size: 1.8rem;
+    }
+
+    /*about*/
+    .about {
+        justify-content: space-evenly;
+    }
+
+    .about h1 {
+        font-size: 5rem;
+        margin-top: -2rem;
+    }
+
+    .me {
+        justify-content: space-between;
+    }
+
+    .me-image {
+        margin-top: -5rem;
+    }
+
+    .about img {
+        width: 16rem;
+    }
+
+    .about p {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+    }
+
+    /*education*/
+    .education h1 {
+        font-size: 5rem;
+        margin-top: 15%;
+    }
+
+    .school div img {
+        margin-top: -5rem;
+        width: 28rem;
+    }
+
+    .school-text div h3 {
+        font-size: 2.5rem;
+    }
+
+    /*skill*/
+    .skill h1 {
+        font-size: 5rem;
+    }
+
+    .skill h2 {
+        font-size: 3.5rem;
+    }
+
+    .skill h4 {
+        font-size: 2rem;
+    }
+
+    .programminglanguage-language {
+        margin-left: 12%;
+    }
+
+    /*experience*/
+    .experience h1 {
+        font-size: 5rem;
+    }
+
+    .experience h2 {
+        font-size: 3rem;
+    }
+
+    .experience h3 {
+        font-size: 2rem;
+    }
+
+    #myCarousel {
+        width: 80%;
+    }
+
+    .item img {
+        max-width: 80% !important;
+    }
+
+    /*contact*/
+    .contact h1 {
+        font-size: 5rem;
+    }
+
+    .contact i {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar-nav li {
+        text-align: center;
+    }
+
+    /*about*/
+    .about h1 {
+        font-size: 4rem;
+    }
+
+    .me {
+        height: 60%;
+        justify-content: space-between;
+    }
+
+    .me-image {
+        width: inherit;
+    }
+
+    .about img {
+        width: 16rem;
+    }
+
+    .about p {
+        font-size: 2rem;
+    }
+
+    /*education*/
+    .education h1 {
+        font-size: 5rem;
+    }
+
+    .school div img {
+        margin-top: -3rem;
+        width: 25rem;
+    }
+
+    .school-text {
+        width: 90%;
+    }
+
+    .school-text div h3 {
+        font-size: 2rem;
+    }
+
+    /*skill*/
+    .skill h1 {
+        font-size: 4rem;
+    }
+
+    .skill h2 {
+        font-size: 2.5rem;
+    }
+
+    .skill h4 {
+        font-size: 1.25rem;
+    }
+
+    .skill i {
+        font-size: 5.5rem;
+    }
+
+    .programminglanguage-language {
+        margin-left: 18%;
+    }
+
+    /*experience*/
+    .experience h1 {
+        font-size: 4rem;
+    }
+
+    .experience h2 {
+        font-size: 2.5rem;
+    }
+
+    .experience h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .project {
+        height: 40%
+    }
+
+    #myCarousel {
+        max-width: 40rem;
+    }
+
+    .item a img {
+        max-width: 40% !important;
+        max-height: 40rem;
+    }
+
+    /*contact*/
+    .contact h1 {
+        font-size: 4rem;
+    }
+
+    .contact i {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-toggle {
+        margin-left: 85%;
+    }
+
+    .navbar-nav li a {
+        font-size: 1rem;
+    }
+
+    /*about*/
+    .about h1 {
+        font-size: 4rem;
+    }
+
+    .me {
+        height: 60%;
+        justify-content: space-between;
+    }
+
+    .me img {
+        width: 18rem;
+    }
+
+    .me-text p {
+        font-size: 1.6rem;
+    }
+
+    /*education*/
+    .education h1 {
+        font-size: 4rem;
+    }
+
+    .school {
+        height: 50%;
+    }
+
+    .school div img {
+        width: 24rem;
+    }
+
+    .school-text div h3 {
+        font-size: 1.5rem;
+    }
+
+    .school-text div h4 {
+        font-size: 0.8rem;
+    }
+
+    /*skill*/
+    .skill h1 {
+        font-size: 4rem;
+    }
+
+    .skill h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .skill h4 {
+        font-size: 1.5rem;
+    }
+
+    .skill img {
+        font-size: 6rem;
+    }
+
+    .programminglanguage-language {
+        justify-content: space-evenly;
+        margin-left: 22%;
+    }
+
+    .toeic h4 {
+        text-align: center;
+    }
+
+    /*experience*/
+    .experience h1 {
+        font-size: 4rem;
+    }
+
+    .experience h2 {
+        font-size: 3rem;
+    }
+
+    .experience h3 {
+        font-size: 2.2rem;
+    }
+
+    .project {
+        height: 30%;
+    }
+
+    #myCarousel {
+        max-width: 35rem;
+    }
+
+    .item a img {
+        max-width: 35% !important;
+        max-height: 40rem;
+    }
+
+    /*contact*/
+    .contact h1 {
+        font-size: 4rem;
+    }
+
+    .contact-icon {
+        height: 30%;
+    }
+
+    .contact i {
+        font-size: 4rem;
+    }
+}

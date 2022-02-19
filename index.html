@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="myPage.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/f7c556931d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>My Page</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me </a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="welcome" id="home">
+            <div></div>
+
+            <div>
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div>
+                <h1>About Me</h1>
+            </div>
+            <div class="me">
+                <div class="me-image">
+                    <img src="img/personal.jpg">
+                </div>
+                <div class="me-text">
+                    <p>
+                        Hi, I'm Alen.<br><br>
+                        Graduated from CS, NTHU, Taiwan.<br><br>
+                        Now looking for a front-end develop job.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="education" id="education">
+            <div>
+                <h1>Education</h1>
+            </div>
+            <div class="school">
+                <div>
+                    <img src="img/nthu.jpg">
+                </div>
+                <div class="school-text">
+                    <div>
+                        <h3>Computer Science - NTHU, HsinChu, Taiwan</h3>
+                        <h4><em>2015-2021</em></h4>
+                    </div>
+                    <div>
+                        <h3>Taipei Municipal Jianguo High School</h3>
+                        <h4><em>2012-2015</em></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill" id="skill">
+            <div>
+                <h1>Skills</h1>
+            </div>
+            <div class="web">
+                <div>
+                    <h2>Web Develop</h2>
+                </div>
+                <div class="web-skill">
+                    <div id="html">
+                        <div class="html-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="html-text">
+                            <h4>HTML</h4>
+                        </div>
+                    </div>
+
+                    <div id="css">
+                        <div class="css-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="css-text">
+                            <h4>CSS</h4>
+                        </div>
+                    </div>
+
+                    <div id="bootstrap">
+                        <div class="bootstrap-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="bootstrap-text">
+                            <h4>Bootstrap</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="programminglanguage">
+                <div class="programminglanguage-title">
+                    <h2>Programming Language</h2>
+                </div>
+                <div class="programminglanguage-language">
+                    <h4>C++</h4>
+                    <h4>C</h4>
+                    <h4>Javascript</h4>
+                </div>
+            </div>
+            <div class="toeic">
+                <h2>TOEIC</h2>
+                <h4>Listening & Reading: 850 - April, 2021</h4>
+            </div>
+        </div>
+
+        <div class="experience" id="experience">
+            <div class="experience-title">
+                <h1>Experience</h1>
+            </div>
+            <div class="project">
+                <h2>Projects</h2>
+
+                <!--projects carousel-->
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <a href="https://alen0612.github.io/SS/SS-01exercise/index.html">
+                                <img src="img/project1.PNG" alt="project1">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="https://alen0612.github.io/SS/SS-02exercise/index.html">
+                                <img src="img/project2.PNG" alt="project2">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="https://alen0612.github.io/SS/SS-03exercise/index.html">
+                                <img src="img/project3.PNG" alt="project3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="teamexperience">
+                <h2>Team Experiences</h2>
+                <h3>15 year of team-sport school team</h3>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div>
+                <h1>Contact & Links</h1>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.facebook.com/tingwei.dong.1/">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/alen0612">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:alen0612@yahoo.com.tw">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:0989759528">
+                    <i class="fas fa-mobile-alt"></i>
+                </a>
+            </div>
+        </div>
+</body>
+
+</html>
